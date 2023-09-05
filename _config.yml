@@ -1,11 +1,11 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: Ted Yu
+SEOTitle: Ted Yu
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
-url: "https://huangxuan.me" # your host, for absolute URL
+email: ted0426244568@outlook.com
+description: "I’m Ted, a graduate with a master’s degree in Data Science from the University of Queensland, Australia. I have a strong passion for programming, data conslidation, modeling, and visual presentation. With my academic background and practical experience, I am committed to tackling complex data problems, extracting valuable insights from data, and presenting them in a clear and engaging manner for diverse audiences. My goal is to continually grow in the field of data science, explore new opportunities, and better understand and address real-world challenges."
+keyword: "Ted, Data Science, University of Queensland, Programming, Data Conslidation, Modeling, Visual Presentation, Python, MySQL, PHP, Java, Tableau"
+url: "https://teddata.github.io/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
