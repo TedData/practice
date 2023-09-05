@@ -4,6 +4,14 @@ description: "「离开世界之前 一切都是过程」"
 ---
 
 {% for post in paginator.posts %}
+
+<style>
+    .post-title {
+        color: blue; /* 将字体颜色设置为蓝色 */
+    }
+</style>
+
+
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
