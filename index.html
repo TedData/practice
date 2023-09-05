@@ -4,19 +4,6 @@ description: "The journey of a thousand miles begins with a single step."
 ---
 
 {% for post in paginator.posts %}
-
-<style>
-    .post.title {
-        color: blue; /* 将字体颜色设置为蓝色 */
-    }
-</style>
-
-<style>
-    .post.subtitle {
-        color: red; /* 将字体颜色设置为蓝色 */
-    }
-</style>
-
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
