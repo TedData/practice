@@ -4,7 +4,7 @@ title: "How to write a post"
 subtitle: 'Using markdown to make a post'
 date: 2023-09-10
 author: "Ted"
-header-img: "../img/post-bg-css.jpg"
+header-img: ../img/post-bg-css.jpg
 header-style: text
 tags:
   - markdown
