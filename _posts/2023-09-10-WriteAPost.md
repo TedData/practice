@@ -12,6 +12,8 @@ tags:
 
 the type is very import
 
+![](img/post-bg-miui6.jpg)
+
 ---
 
 首先题目必须是yyyy-mm-dd-双峰标题.md
