@@ -12,6 +12,7 @@ tags:
 
 the type is very import
 
+![](https://github.com/TedData/TedData.github.io/blob/master/img/post-bg-web.jpg)
 ![](../img/post-bg-css.jpg)
 
 ---
