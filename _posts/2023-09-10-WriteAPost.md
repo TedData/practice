@@ -10,7 +10,7 @@ tags:
   - markdown
 ---
 
-> the type is very import!!!
+< the type is very import!!!
 
 ![](https://github.com/TedData/TedData.github.io/blob/master/img/post-bg-web.jpg)
 
