@@ -4,17 +4,15 @@ title: "How to write a post"
 subtitle: 'Using markdown to make a post'
 date: 2023-09-10
 author: "Ted"
-header-img: ../img/post-bg-css.jpg
+header-img: "https://github.com/TedData/TedData.github.io/blob/master/img/post-bg-web.jpg"
 header-style: text
 tags:
   - markdown
 ---
 
-the type is very import
+the type is very import!!!
 
 ![](https://github.com/TedData/TedData.github.io/blob/master/img/post-bg-web.jpg)
-
-![](../img/post-bg-css.jpg)
 
 ---
 
