@@ -4,7 +4,7 @@ title: "How to write a post"
 subtitle: 'Using markdown to make a post'
 date: 2023-09-10
 author: "Ted"
-header-img: "https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/post-bg-web
+header-img: "https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/post-bg-web"
 tags:
   - markdown
 ---
