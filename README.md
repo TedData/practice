@@ -3,7 +3,7 @@
 
 ---
 
-Firstly, the title must be in the format yyyy-mm-dd-double-hyphen-title.md.
+Firstly, the title must be in the format yyyy-mm-dd-PascalCaseTitle.md.
 
 The 1st line is: --- # This format cannot be changed.
 
@@ -34,15 +34,16 @@ The title format, for example:
 layout: post
 title: "How to write a post"
 subtitle: 'Using markdown to make a post'
-date: 2023-09-10
+date: 2013-10-15
 author: "Ted"
 header-style: text
 tags:
   - markdown
+  - python
 ---
 ```
 
-> Followed by content, which can be formatted using markdown.
+\> Followed by content, which can be formatted using markdown.
 
 For example:
 ```
@@ -52,17 +53,5 @@ For example:
 When adding image addresses, you must use URLs and not local addresses. For example:
 ```
 ![](https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/post-bg-web.jpg)
-```
-
-
-
-```sh
-$ bundle install 
-```
-
-3. Serve the website (`localhost:4000` by default):
-
-```sh
-$ bundle exec jekyll serve  # alternatively, npm start
 ```
 
