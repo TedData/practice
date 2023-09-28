@@ -1,4 +1,4 @@
-[Hux Blog](https://huangxuan.me)
+[Ted Yu](https://teddata.github.io/)
 ================================
 
 > I never expect this becomes popular.
