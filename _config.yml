@@ -15,7 +15,7 @@ future: true
 RSS: false
 linkedin_username:  Peng-Yu-ted0426244568
 facebook_username:  ted.yu.9803
-github_username: TedData
+github_username: TedData/TedData.me
 #twitter_username: huxpro
 
 # Build settings
@@ -57,7 +57,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username: ted
 
 # Netease settings
 netease_comment: false
