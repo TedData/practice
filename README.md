@@ -28,9 +28,7 @@ The last line is: --- # This format cannot be changed.
 
 Then, leave a blank line, and after that, you can start writing content in markdown format.
 
----
-
-The title format, for example:
+For example:
 ```
 ---
 layout: post
@@ -56,7 +54,9 @@ For example:
 
 ---
 
-When adding image addresses, you must use URLs and not local addresses. For example:
+When adding image addresses, you must use URLs and not local addresses. 
+
+For example:
 ```
 ![](https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/icon_wechat.png)
 ```
