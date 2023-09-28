@@ -28,6 +28,8 @@ The last line is: --- # This format cannot be changed.
 
 Then, leave a blank line, and after that, you can start writing content in markdown format.
 
+---
+
 The title format, for example:
 ```
 ---
@@ -43,12 +45,16 @@ tags:
 ---
 ```
 
+---
+
 \> Followed by content, which can be formatted using markdown.
 
 For example:
 ```
 > The type is very important!!!
 ```
+
+---
 
 When adding image addresses, you must use URLs and not local addresses. For example:
 ```
