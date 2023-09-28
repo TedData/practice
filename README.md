@@ -52,6 +52,6 @@ For example:
 
 When adding image addresses, you must use URLs and not local addresses. For example:
 ```
-![](https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/post-bg-web.jpg)
+![](https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/icon_wechat.png)
 ```
 
