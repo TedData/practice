@@ -5,6 +5,13 @@
 
 Firstly, the title must be in the format yyyy-mm-dd-PascalCaseTitle.md.
 
+For example:
+```
+2015-02-14-HelloWorld.md
+```
+
+---
+
 The 1st line is: --- # This format cannot be changed.
 
 The 2nd line is: layout: post # This format cannot be changed.
