@@ -22,7 +22,7 @@ Hi. I'm Peng (Ted) Yu, a dedicated professional in the field of data. Currently,
 
 - Due to my strong interest in data from my previous work experiences, I developed a deep fascination with the captivating world of "data." Consequently, I made the decision to pursue further knowledge in this field by enrolling in a Master's program in Data Science at the University of Queensland.
 
-- Throughout my academic journey, I delved deep into the mysteries of data, explored the potential of algorithms, and marveled at the magic of decision-making processes. This period of intense learning elevated my understanding and proficiency in working with data to new heights. In the end, I graduated in 2022 with a GPA of 6.13, a testament to my dedication and hard work.
+- Throughout my academic journey, I delved deep into the mysteries of data, explored the potential of algorithms, and marveled at the magic of decision-making processes. This period of intense learning elevated my understanding and proficiency in working with data to new heights. In the end, I graduated in **2022** with a GPA of 6.13 by 7, a testament to my dedication and hard work.
 
 - This experience has enriched my knowledge base and propelled my career development forward.
 
