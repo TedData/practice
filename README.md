@@ -73,8 +73,10 @@ For example:
 Add code, using "```" followed by the programming language.
 
 For example:
+```
 ```python
 # Your Python code goes here
 print("Hello, World!")
+```
 ```
 
