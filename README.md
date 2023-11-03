@@ -70,7 +70,7 @@ For example:
 
 ---
 
-Add code, using "```" followed by the programming language.
+Add code, using "```" followed by the programming language name.
 
 For example:
 ```
