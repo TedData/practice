@@ -2,7 +2,7 @@
 layout: post
 title: "Power BI Service Data Export Script"
 subtitle: 'Get the metadata from PBI Workpace'
-date: 2013-11-03
+date: 2023-11-03
 author: "Ted"
 header-style: text
 tags:
