@@ -75,7 +75,7 @@ Add code, using "```" followed by the programming language.
 For example:
 ```
 \```python
-# Your Python code goes here
+# Not having \
 print("Hello, World!")
 \```
 
