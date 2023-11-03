@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Retrieving and Exporting Power BI Activity Logs with PowerShell"
+title: "PowerBI ActivityLog Retrieval Script Article"
 date: 2023-11-02
 author: "Ted"
 header-style: text
