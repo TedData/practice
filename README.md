@@ -68,3 +68,13 @@ For example:
 ![](https://raw.githubusercontent.com/TedData/TedData.github.io/master/img/icon_wechat.png)
 ```
 
+---
+
+Add code, using "```" followed by the programming language.
+
+For example:
+```python
+# Your Python code goes here
+print("Hello, World!")
+```
+
