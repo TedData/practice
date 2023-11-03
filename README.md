@@ -74,13 +74,14 @@ Add code, using "```" followed by the programming language.
 
 For example:
 ```
-```python
+\```python
 # Your Python code goes here
 print("Hello, World!")
-```
+\```
 
     Hello, World!
 ```
+
 ```python
 # Your Python code goes here
 print("Hello, World!")
