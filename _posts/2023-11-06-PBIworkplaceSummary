@@ -38,7 +38,7 @@ organization, capturing essential details for analysis and documentation.
 #>
 
 # Set output path for CSV export
-$output_path = "C:\Users\Peng Yu\Downloads"
+$output_path = "C:\Users\ted\Downloads"
 
 # Connect to Power BI service account
 Connect-PowerBIServiceAccount
