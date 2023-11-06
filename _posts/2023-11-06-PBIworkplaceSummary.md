@@ -57,7 +57,7 @@ $results = foreach ($workspace in $allWorkspaces) {
         "IsOrphaned"            = $workspace.IsOrphaned
         "IsOnDedicatedCapacity" = $workspace.IsOnDedicatedCapacity
         "CapacityId"            = $workspace.CapacityId
-        "UsersCount"            = $workspace.Users.Count
+        "UsersCount"            = ($workspace.Users.Count | Measure-Object -Sum).Sum
         "UserNames"             = ($workspace.Users.UserPrincipalName -replace '@.*\.com') -join ', '  # Extracting and joining user names
     }
 }
