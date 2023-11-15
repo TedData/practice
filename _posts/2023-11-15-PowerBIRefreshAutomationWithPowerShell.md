@@ -25,7 +25,7 @@ The PowerShell script provided here serves the purpose of collecting and storing
 <#
 .SYNOPSIS
     PowerShell script for collecting and storing Power BI refresh 
-    performance data into a SQL Server database.
+    Performance data into a SQL Server database.
 
 .DESCRIPTION
     This script connects to the Power BI service, retrieves workspace, 
@@ -37,7 +37,7 @@ The PowerShell script provided here serves the purpose of collecting and storing
 
 param (
     [string]$sqlUsername = "SuperAdmin",            # SQL Server username
-    [string]$sqlPassword = "SuperAdmin",            # SQL Server password
+    [string]$sqlPassword = "**********",            # SQL Server password
     [string]$serverName = "DESKTOP-*******",       # SQL Server instance name
     [string]$databaseName = "PBI_Inventory",       # Database name
     [bool]$clearOldData = $false                    # Flag to determine whether to clear old data
@@ -114,12 +114,12 @@ $connection.ConnectionString = "Data Source=$serverName;Initial Catalog=$databas
 $connection.Open()
 
 # Define Power BI table and features
-$tableName_PBI_performance = "dbo.PBI_performance"
-$feature_PBI_performance = @("Workspace", "Report", "Dataset", "StartTime", "EndTime", "Status", "WorkspaceId", "ReportId", "DatasetId", "CreationTime","LastTimeRefresh","TotalRefreshCount","RefreshCostTime")
+$tableName_PBI_Performance = "dbo.PBI_Performance"
+$feature_PBI_Performance = @("Workspace", "Report", "Dataset", "StartTime", "EndTime", "Status", "WorkspaceId", "ReportId", "DatasetId", "CreationTime","LastTimeRefresh","RefreshCostTime")
 
 # Create table if clearOldData flag is set
 if ($clearOldData) {
-    Add-Table $connection $tableName_PBI_performance $feature_PBI_performance
+    Add-Table $connection $tableName_PBI_Performance $feature_PBI_Performance
 }
 
 # Process Power BI workspaces and refresh history
@@ -138,27 +138,18 @@ ForEach ($workspace in (Get-PowerBIWorkspace)) {
             $DatasetId = $dataset.Id
             $refreshUri = "groups/$workspaceId/datasets/$($dataset.Id)/refreshes"
             $refreshHistory = Invoke-PowerBIRestMethod -Url $refreshUri -Method Get | ConvertFrom-Json
+            $CreateTime = $refreshHistory.value[0].StartTime
+            $LastTimeRefresh = $refreshHistory.value[$refreshHistory.value.Length-1].EndTime
 
             foreach ($refreshEntry in $refreshHistory.value) {
                 $Status = $refreshEntry.Status
                 $startTime = [DateTime]::Parse($refreshEntry.StartTime)
                 $endTime = [DateTime]::Parse($refreshEntry.EndTime)
                 $timeDifferenceInSeconds = [math]::Round(($endTime - $startTime).TotalSeconds)
-                $hours = [math]::Floor($timeDifferenceInSeconds / 3600)
-                $minutes = [math]::Floor(($timeDifferenceInSeconds % 3600) / 60)
-                $seconds = $timeDifferenceInSeconds % 60
-                $nonZeroComponents = @()
-                if ($hours -ne 0) { $nonZeroComponents += "$hours h" }
-                if ($minutes -ne 0) { $nonZeroComponents += "$minutes m" }
-                $nonZeroComponents += "$seconds s"
-                $formattedTimeDifference = $nonZeroComponents -join '-'
-
-                $CreateTime = $refreshEntry.StartTime
-                $TotalRefreshCount = $refreshHistory.value.Length
-                $LastTimeRefresh = $refreshHistory.value[$TotalRefreshCount-1].EndTime
-
-                $data_PBI_performance = @($WorkspaceName, $ReportName, $DatasetName, $startTime, $endTime, $Status, $workspaceId, $ReportId, $DatasetId, $CreateTime, $LastTimeRefresh, $TotalRefreshCount, $formattedTimeDifference)
-                Insert-Data $connection $tableName_PBI_performance $feature_PBI_performance $data_PBI_performance
+                $formattedTimeDifference = "$($timeDifferenceInSeconds)s"
+                
+                $data_PBI_Performance = @($WorkspaceName, $ReportName, $DatasetName, $refreshEntry.StartTime, $refreshEntry.EndTime, $Status, $workspaceId, $ReportId, $DatasetId, $CreateTime, $LastTimeRefresh, $formattedTimeDifference)
+                Insert-Data $connection $tableName_PBI_Performance $feature_PBI_Performance $data_PBI_Performance
             }
         }
     }
