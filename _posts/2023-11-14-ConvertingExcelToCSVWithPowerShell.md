@@ -31,7 +31,7 @@ The script begins with a set of comments, including a synopsis and description o
 #>
 
 param (
-    [string]$filePath = "C:\Users\Peng Yu\Downloads\", 
+    [string]$filePath = "C:\Users\ted\Downloads\", 
     [string]$fileName = "WPP2022_Locations_notes.xls" 
 )
 
