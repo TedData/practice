@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "PowerBI Inventory Management Script"
+subtitle: 'PBI Workspace Summary to SQL Server'
 date: 2023-11-16
 author: "Ted"
 header-style: text
