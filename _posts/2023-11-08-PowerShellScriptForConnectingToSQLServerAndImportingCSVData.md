@@ -18,32 +18,23 @@ In this article, we'll explore a PowerShell script designed to connect to a SQL 
 
 The script begins with a detailed comment-based help section, including a synopsis and description of its functionality. The main functionalities of the script are as follows:
 
-1. *SQL Server Connection Parameters:*
-   - `$sqlUsername`: SQL Server username (default: "SuperAdmin").
-   - `$sqlPassword`: SQL Server password (default: "SuperAdmin").
-   - `$serverName`: SQL Server instance name (default: "DESKTOP-46A7LA5").
-   - `$databaseName`: Database name (default: "PBI_Inventory").
-   - `$csvFilePath`: Path to the directory containing the CSV file (default: "C:\Users\Peng Yu\Downloads\").
-   - `$csvFileName`: Name of the CSV file (default: "workspaceSummary.csv").
-   - `$clearOldData`: Boolean flag to indicate whether to clear old data (default: `$false`).
-
-2. *Functions:*
+1. *Functions:*
    - `Execute-DB-Command-With-Params`: Executes a SQL command with parameters.
    - `Add-Table`: Adds a table to the database based on specified features.
    - `Insert-Data`: Inserts data into a specified table.
 
-3. *Main Script Execution:*
+2. *Main Script Execution:*
    - Establishes a connection to the SQL Server using provided credentials.
    - Determines the table name from the CSV file name.
    - Constructs the full file path for the CSV file.
    - Imports CSV data using the `Import-Csv` cmdlet.
    - Extracts column names from the first row of the CSV data.
 
-4. *Table Management:*
+3. *Table Management:*
    - If `$clearOldData` is specified, it adds a new table to clear old data.
    - Inserts each row of data into the database table.
 
-5. *Completion Message:*
+4. *Completion Message:*
    - Displays a completion message once the process is finished.
 
 ## Code
