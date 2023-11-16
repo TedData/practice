@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Exports PowerBI workplace Summary"
+subtitle: 'PBI Workspace Summary to CSV'
 date: 2023-11-06
 author: "Ted"
 header-style: text
