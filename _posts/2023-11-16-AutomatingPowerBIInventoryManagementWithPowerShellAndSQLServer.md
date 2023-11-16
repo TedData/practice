@@ -34,8 +34,8 @@ The PowerShell script begins with a detailed comment-based help section, providi
 
 param (
     [string]$sqlUsername = "SuperAdmin",            # SQL Server username
-    [string]$sqlPassword = "SuperAdmin",            # SQL Server password
-    [string]$serverName = "DESKTOP-46A7LA5",        # SQL Server instance name
+    [string]$sqlPassword = "**********",            # SQL Server password
+    [string]$serverName = "DESKTOP-*******",        # SQL Server instance name
     [string]$databaseName = "PBI_Inventory",        # Database name
     [bool]$clearOldData = $true                     # Flag to determine whether to clear old data
 )
