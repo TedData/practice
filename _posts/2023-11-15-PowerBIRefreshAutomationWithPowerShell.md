@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Automating Power BI Refresh Performance with PowerShell and SQL Server"
+subtitle: 'PBI Workspace Metadata to SQL Server'
 date: 2023-11-15
 author: "Ted"
 header-style: text
