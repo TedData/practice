@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Power BI Service Data Export Script"
-subtitle: 'PBI Workspace metadata to CSV'
+subtitle: 'PBI Workspace Metadata to CSV'
 date: 2023-11-03
 author: "Ted"
 header-style: text
