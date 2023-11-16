@@ -111,13 +111,13 @@ $connection = New-Object System.Data.SqlClient.SqlConnection
 $connection.ConnectionString = "Data Source=$serverName;Initial Catalog=$databaseName;User Id=$sqlUsername;Password=$sqlPassword;"
 $connection.Open()
 
-# Define table and feature information for workplace summary
-$tableName_workplaceSummary = "dbo.workplaceSummary"
-$feature_workplaceSummary = @("WorkspaceName", "workspaceId", "ReportName", "ReportId", "DatasourceName", "DatasourceId", "Type", "State", "IsReadOnly", "IsOrphaned", "IsOnDedicatedCapacity", "CapacityId", "WebURL", "EmbedUrl", "UsersCount", "UsersNames")
+# Define table and feature information for workspace summary
+$tableName_workspaceSummary = "dbo.workspaceSummary"
+$feature_workspaceSummary = @("WorkspaceName", "workspaceId", "ReportName", "ReportId", "DatasourceName", "DatasourceId", "Type", "State", "IsReadOnly", "IsOrphaned", "IsOnDedicatedCapacity", "CapacityId", "WebURL", "EmbedUrl", "UsersCount", "UsersNames")
 
 # If clearOldData is true, add a table to the database
 if ($clearOldData) {
-    Add-Table $connection $tableName_workplaceSummary $feature_workplaceSummary
+    Add-Table $connection $tableName_workspaceSummary $feature_workspaceSummary
 }
 
 # Retrieve all workspaces in the organization
@@ -140,8 +140,8 @@ foreach ($workspace in $allWorkspaces) {
 
     # If the workspace has no reports, insert summary data
     if ($ReportCount -eq 0) {
-        $data_workplaceSummary = @($WorkspaceName, $workspaceId, "", "", "", "", $Type, $State, $IsReadOnly, $IsOrphaned, $IsOnDedicatedCapacity, $CapacityId, "", "", $UsersCount, $UserNames)
-        Insert-Data $connection $tableName_workplaceSummary $feature_workplaceSummary $data_workplaceSummary
+        $data_workspaceSummary = @($WorkspaceName, $workspaceId, "", "", "", "", $Type, $State, $IsReadOnly, $IsOrphaned, $IsOnDedicatedCapacity, $CapacityId, "", "", $UsersCount, $UserNames)
+        Insert-Data $connection $tableName_workspaceSummary $feature_workspaceSummary $data_workspaceSummary
     } else {
         # Iterate through each report in the workspace
         for ($j = 0; $j -lt $ReportCount; $j++) {
@@ -168,8 +168,8 @@ foreach ($workspace in $allWorkspaces) {
                 $DatasourceName = $datasource.Name
             }
             # Create data array and insert into the database
-            $data_workplaceSummary = @($WorkspaceName, $workspaceId, $ReportName, $ReportId, $DatasourceName, $DatasourceId, $Type, $State, $IsReadOnly, $IsOrphaned, $IsOnDedicatedCapacity, $CapacityId, $WebURL, $EmbedUrl, $UsersCount, $UserNames)
-            Insert-Data $connection $tableName_workplaceSummary $feature_workplaceSummary $data_workplaceSummary
+            $data_workspaceSummary = @($WorkspaceName, $workspaceId, $ReportName, $ReportId, $DatasourceName, $DatasourceId, $Type, $State, $IsReadOnly, $IsOrphaned, $IsOnDedicatedCapacity, $CapacityId, $WebURL, $EmbedUrl, $UsersCount, $UserNames)
+            Insert-Data $connection $tableName_workspaceSummary $feature_workspaceSummary $data_workspaceSummary
         }
     }
 }
