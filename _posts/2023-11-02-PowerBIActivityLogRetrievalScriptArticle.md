@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "PowerBI ActivityLog Retrieval Script Article"
+subtitle: 'PBI Activity Logs to CSV'
 date: 2023-11-02
 author: "Ted"
 header-style: text
