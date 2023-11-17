@@ -16,18 +16,6 @@ In everyday data management tasks, exporting data from specific SQL Server table
 
 ## Script Overview
 
-### Parameters
-
-The script includes the following parameters:
-
-- `$sqlUsername`: SQL Server username, default is "SuperAdmin."
-- `$sqlPassword`: SQL Server password, default is "SuperAdmin."
-- `$serverName`: SQL Server instance name, default is "DESKTOP-46A7LA5."
-- `$databaseName`: Database name, default is "PBI_Inventory."
-- `$outputPath`: Output directory for exported CSV files, default is "C:\Users\Peng Yu\Downloads."
-- `$tables`: Array of table names to export data from, default is ("Users", "Refreshes").
-- `$DownloadAllTable`: Flag indicating whether to download data from all tables in the database, default is $false.
-
 ### Functions
 
 - `Get-SqlConnection`: Function to establish a connection with SQL Server.
