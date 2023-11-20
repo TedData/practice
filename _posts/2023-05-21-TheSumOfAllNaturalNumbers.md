@@ -13,23 +13,23 @@ The result of $1 + 2 + 3 + 4 + 5 + \ldots + \infty$
 
 Proof:
 
-$$assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$$
+$$assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots
 
-$$\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)$$
+\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)
 
-$$\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots$$
+\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots
 
-$$\therefore 1 - S_{1} = S_{1}$$
+\therefore 1 - S_{1} = S_{1}
 
-$$\therefore S_{1} = \frac{1}{2}$$
+\therefore S_{1} = \frac{1}{2}
 
-$$assume\ S_{2} = 1 - 2 + 3 - 4 + 5 - 6 + \ldots$$
+assume\ S_{2} = 1 - 2 + 3 - 4 + 5 - 6 + \ldots
 
-$$\Rightarrow 2S_{2} = (1 - 2 + 3 - 4 + 5 - 6 + \ldots) + (1 - 2 + 3 - 4 + 5 - 6 + \ldots)$$
+\Rightarrow 2S_{2} = (1 - 2 + 3 - 4 + 5 - 6 + \ldots) + (1 - 2 + 3 - 4 + 5 - 6 + \ldots)
 
-$$\Rightarrow 2S_{2} = 1 + ( - 2 + 1) + (3 - 2) + ( - 4 + 3) + (5 - 4) + ( - 6 + 5) + \ldots$$
+\Rightarrow 2S_{2} = 1 + ( - 2 + 1) + (3 - 2) + ( - 4 + 3) + (5 - 4) + ( - 6 + 5) + \ldots
 
-$$\Rightarrow 2S_{2} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$$
+\Rightarrow 2S_{2} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$$
 
 $$\Rightarrow 2S_{2} = S_{1} = \frac{1}{2}$$
 
