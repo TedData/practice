@@ -9,6 +9,7 @@ tags:
   - math
 ---
 
+
 **The Cauchy-Schwarz Inequality**
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
@@ -42,15 +43,15 @@ Proof:
 
 <br>
 
-     $assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$     
+     $$assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$$ 
 
 <br>
 
-     $\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)$     
+     $$\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)$$     
 
-     $\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots$     
+     $$\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots$$     
 
-     $\therefore 1 - S_{1} = S_{1}$     
+     $$\therefore 1 - S_{1} = S_{1}$$     
 
      $\therefore S_{1} = \frac{1}{2}$     
 
@@ -80,8 +81,8 @@ Proof:
 
 <br>
 
-     $\Rightarrow S = - \frac{S_{2}}{3} = - \frac{\frac{1}{4}}{3} = - \frac{1}{12}$     
+     $$\Rightarrow S = - \frac{S_{2}}{3} = - \frac{\frac{1}{4}}{3} = - \frac{1}{12}$$     
 
-     $Therefore,\ the\ sum\ of\ 1 + 2 + 3 + 4 + 5 + 6 + \ldots = - \frac{1}{12}$     
+     $$Therefore,\ the\ sum\ of\ 1 + 2 + 3 + 4 + 5 + 6 + \ldots = - \frac{1}{12}$$     
 
 <br>
