@@ -5,6 +5,8 @@ subtitle: 'PBI Workspace Summary to SQL Server'
 date: 2023-11-16
 author: "Ted"
 header-style: text
+header-mask: 0.3
+mathjax: true
 tags:
   - PowerShell
   - Power BI
