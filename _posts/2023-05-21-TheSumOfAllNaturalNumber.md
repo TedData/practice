@@ -42,7 +42,7 @@ $\Rightarrow 2S_{2} = 1 + ( - 2 + 1) + (3 - 2) + ( - 4 + 3) + (5 - 4) + ( - 6 + 
 $\Rightarrow 2S_{2} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$
 ···········(9)
 <br>
-$\Rightarrow 2S_{2} = S_{1} = \frac{1}{2}$$
+$\Rightarrow 2S_{2} = S_{1} = \frac{1}{2}$
 ···········(10)
 <br>
 $\therefore S_{2} = \frac{1}{4}$
