@@ -10,31 +10,11 @@ tags:
 ---
 
 
-**The Cauchy-Schwarz Inequality**
+而「计算问题」有多少个呢？
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+这个问题可以等同于，我们有多少个形如 $\\{000, 010\\}$ 这样的 0，1 序列的集合？即 $\Sigma^{\*}$ 这个集合有多少个子集？用数学语言描述就是求 $\Sigma^{\*}$ 的幂集的势 $\| P(\Sigma^{\*})\|$ 。
 
-
-**The Cauchy-Schwarz Inequality**
-
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
-
-
-$$\left( \sum{k=1}^n a_k b_k \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)$$
-
-
-https://latex.codecogs.com/gif.latex?\\sum_{i=0}^n
-
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-The Cauchy-Schwarz Inequality
-
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-
-
+由于 $\Sigma^{\*}$ 与 $Z$ 是等势的，所以这个问题等价于求 $\|P(Z)\|$ 的大小。根据 [Cantor's theorem](https://en.wikipedia.org/wiki/Cantor%2527s_theorem)，一个「无穷可数」的集合的幂集是「无穷不可数（uncountably infinite）」的。（注 3）
 <br>
 
 The result of $1 + 2 + 3 + 4 + 5 + \ldots + \infty$
