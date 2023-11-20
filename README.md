@@ -43,7 +43,9 @@ title: "How to write a post"
 subtitle: 'Using markdown to make a post'
 date: 2013-10-15
 author: "Ted"
-header-style: text
+header-style: text  /  header-img: "img/post-bg-infinity.jpg"
+header-mask: 0.3
+mathjax: true
 tags:
   - markdown
   - python
