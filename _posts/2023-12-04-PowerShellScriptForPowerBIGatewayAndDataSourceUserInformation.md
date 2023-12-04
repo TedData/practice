@@ -8,8 +8,8 @@ header-style: text
 header-mask: 0.3
 mathjax: true
 tags:
-  - markdown
-  - python
+  - PowerShell
+  - Power BI
 ---
 
 # PowerShell Script for Power BI Gateway and DataSource User Information
