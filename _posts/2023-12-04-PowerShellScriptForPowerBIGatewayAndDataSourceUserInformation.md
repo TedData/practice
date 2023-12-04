@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "How to write a post"
-subtitle: 'Using markdown to make a post'
+title: "PowerBI Gateway DataSource Script"
+subtitle: 'Gateway and DataSource User to CSV'
 date: 2013-10-15
 author: "Ted"
-header-style: text  /  header-img: "img/post-bg-infinity.jpg"
+header-style: text 
 header-mask: 0.3
 mathjax: true
 tags:
@@ -22,7 +22,7 @@ PowerShell, a robust scripting language, empowers users to automate tasks effici
 
 The script begins by ensuring the presence of the required module "MicrosoftPowerBIMgmt." It checks for installation or updates to maintain compatibility:
 
-powershell
+```powershell
 function Install-OrUpdate-Module([string]$ModuleName) {
     # Check if the module is installed and its version is outdated
     $module = Get-Module $ModuleName -ListAvailable -ErrorAction SilentlyContinue
@@ -34,26 +34,27 @@ function Install-OrUpdate-Module([string]$ModuleName) {
         Write-Host "Module $ModuleName $action complete"
     }
 }
-
+```
 # Install or update the required PowerShell module for Power BI management
+```
 Install-OrUpdate-Module -ModuleName "MicrosoftPowerBIMgmt"
 Connect-PowerBIServiceAccount
-
+```
 
 ### Gateway Information Retrieval
 
 The script proceeds to gather information about Power BI Gateways by querying the Power BI service's REST API. Key details such as Gateway ID, Name, Type, Public Key, and Version are extracted:
 
-powershell
+```powershell
 $url = "https://api.powerbi.com/v1.0/myorg/gateways"
 $GetGateways = Invoke-PowerBIRestMethod -Url $url -Method Get | ConvertFrom-Json
-
+```
 
 ### DataSource Processing
 
 For each Gateway, the script iterates through associated DataSources, collecting essential information like DataSource ID, Name, Credential Type, and Connection Details:
 
-powershell
+```powershell
 foreach ($Gateway in $GetGateways.value){
     # Extract gateway information
     $gatewayAnnotation = $Gateway.gatewayAnnotation | ConvertFrom-Json
@@ -69,13 +70,13 @@ foreach ($Gateway in $GetGateways.value){
     # Retrieve datasource information for the current gateway
     $url_getGatewayId = "https://api.powerbi.com/v1.0/myorg/gateways/$($gatewayId)/datasources"
     $GetDatasources = Invoke-PowerBIRestMethod -Url $url_getGatewayId -Method Get | ConvertFrom-Json
-
+```
 
 ### User Information Extraction
 
 The script then dives into each DataSource, retrieving user-specific details such as DisplayName, Principal Type, Identifier, and DataSource Access Rights:
 
-powershell
+```powershell
 # Iterate through each user for the current datasource
 foreach ($GetDatasourcesUser in $GetDatasourcesUsers.value){
     $displayName = $GetDatasourcesUser.displayName
@@ -94,17 +95,17 @@ foreach ($GetDatasourcesUser in $GetDatasourcesUsers.value){
     }
     $result_user += $result_userInfo
 }
-
+```
 
 ### Results Export
 
 Finally, the collected information is stored in custom objects for Gateways and Users. The script exports these details to separate CSV files for analysis:
 
-powershell
+```powershell
 # Export results to CSV files
 $result_gateway | Export-Csv -Path "$outputPath\PBI_Gateways.csv" -NoTypeInformation
 $result_user | Export-Csv -Path "$outputPath\PBI_DataSourceUsers.csv" -NoTypeInformation
-
+```
 
 ## Conclusion
 
