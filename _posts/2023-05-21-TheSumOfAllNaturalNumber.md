@@ -15,6 +15,7 @@ This is the most reasonable proof I have encountered so far.
 The result of $1 + 2 + 3 + 4 + 5 + \ldots + \infty$
 
 Proof:
+
 (1)···········$assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$                                              
 (2)···········$\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)$                                
 (3)···········$\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots$                                  
