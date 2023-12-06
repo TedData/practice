@@ -13,37 +13,24 @@ tags:
 
 This is the most reasonable proof I have encountered so far.                          
 The result of $1 + 2 + 3 + 4 + 5 + \ldots + \infty$
-<br>
+
 Proof:
-···········(1)$assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$                                              
-<br>
-···········(2)$\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)$                                
-<br>
-···········(3)$\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots$                                  
-<br>
-···········(4)$\therefore 1 - S_{1} = S_{1}$                                                                
-<br>
-···········(5)$\therefore S_{1} = \frac{1}{2}$                                                              
-<br>
-···········(6)$assume\ S_{2} = 1 - 2 + 3 - 4 + 5 - 6 + \ldots$                                              
-<br>
-···········(7)$\Rightarrow 2S_{2} = (1 - 2 + 3 - 4 + 5 - 6 + \ldots) + (1 - 2 + 3 - 4 + 5 - 6 + \ldots)$    
-<br>
-···········(8)$\Rightarrow 2S_{2} = 1 + ( - 2 + 1) + (3 - 2) + ( - 4 + 3) + (5 - 4) + ( - 6 + 5) + \ldots$  
-<br>
-···········(9)$\Rightarrow 2S_{2} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$                                         
-<br>
-···········(10)$\Rightarrow 2S_{2} = S_{1} = \frac{1}{2}$                                                   
-<br>
-···········(11)$\therefore S_{2} = \frac{1}{4}$                                                             
-<br>
-···········(12)$assume\ S = 1 + 2 + 3 + 4 + 5 + 6 + \ldots$                                                 
-<br>
-···········(13)$\Rightarrow S - S_{2} = (1 + 2 + 3 + 4 + 5 + 6 + \ldots) - (1 - 2 + 3 - 4 + 5 - 6 + \ldots)$
-<br>
-···········(14)$\Rightarrow S - S_{2} = (1 - 1) + (2 + 2) + (3 - 3) + (4 + 4) + (5 - 5) + (6 + 6) + \ldots$ 
-···········(15)$\Rightarrow S - S_{2} = 0 + 4 + 0 + 8 + 0 + 12 + \ldots$                                    
-···········(16)$\Rightarrow S - S_{2} = 4(1 + 2 + 3 + 4 + 5 + \ldots)$                                      
-···········(17)$\Rightarrow S - S_{2} = 4S$                                                                 
-···········(18)$\Rightarrow S = - \frac{S_{2}}{3} = - \frac{\frac{1}{4}}{3} = - \frac{1}{12}$               
-···········(19)$Therefore,\ the\ sum\ of\ 1 + 2 + 3 + 4 + 5 + 6 + \ldots = - \frac{1}{12}$                  
+(1)···········$assume\ S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$                                              
+(2)···········$\Rightarrow 1 - S_{1} = 1 - (1 - 1 + 1 - 1 + 1 - 1 + \ldots)$                                
+(3)···········$\Rightarrow 1 - S_{1} = 1 - 1 + 1 - 1 + 1 - 1 + 1 - \ldots$                                  
+(4)···········$\therefore 1 - S_{1} = S_{1}$                                                                
+(5)···········$\therefore S_{1} = \frac{1}{2}$                                                              
+(6)···········$assume\ S_{2} = 1 - 2 + 3 - 4 + 5 - 6 + \ldots$                                              
+(7)···········$\Rightarrow 2S_{2} = (1 - 2 + 3 - 4 + 5 - 6 + \ldots) + (1 - 2 + 3 - 4 + 5 - 6 + \ldots)$    
+(8)···········$\Rightarrow 2S_{2} = 1 + ( - 2 + 1) + (3 - 2) + ( - 4 + 3) + (5 - 4) + ( - 6 + 5) + \ldots$  
+(9)···········$\Rightarrow 2S_{2} = 1 - 1 + 1 - 1 + 1 - 1 + \ldots$                                         
+(10)···········$\Rightarrow 2S_{2} = S_{1} = \frac{1}{2}$                                                   
+(11)···········$\therefore S_{2} = \frac{1}{4}$                                                             
+(12)···········$assume\ S = 1 + 2 + 3 + 4 + 5 + 6 + \ldots$                                                 
+(13)···········$\Rightarrow S - S_{2} = (1 + 2 + 3 + 4 + 5 + 6 + \ldots) - (1 - 2 + 3 - 4 + 5 - 6 + \ldots)$
+(14)···········$\Rightarrow S - S_{2} = (1 - 1) + (2 + 2) + (3 - 3) + (4 + 4) + (5 - 5) + (6 + 6) + \ldots$ 
+(15)···········$\Rightarrow S - S_{2} = 0 + 4 + 0 + 8 + 0 + 12 + \ldots$                                    
+(16)···········$\Rightarrow S - S_{2} = 4(1 + 2 + 3 + 4 + 5 + \ldots)$                                      
+(17)···········$\Rightarrow S - S_{2} = 4S$                                                                 
+(18)···········$\Rightarrow S = - \frac{S_{2}}{3} = - \frac{\frac{1}{4}}{3} = - \frac{1}{12}$               
+(19)···········$Therefore,\ the\ sum\ of\ 1 + 2 + 3 + 4 + 5 + 6 + \ldots = - \frac{1}{12}$                  
