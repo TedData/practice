@@ -33,7 +33,7 @@ Run the script with Administrator privileges.
 #>
 
 param (
-    [string]$outputPath = "C:\Users\Peng Yu\Downloads"
+    [string]$outputPath = "C:\Users\ted\Downloads"
 )
 
 # Install and import the Az module if not already installed
