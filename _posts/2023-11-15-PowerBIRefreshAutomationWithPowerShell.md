@@ -39,7 +39,7 @@ The PowerShell script provided here serves the purpose of collecting and storing
 param (
     [string]$sqlUsername = "SuperAdmin",            # SQL Server username
     [string]$sqlPassword = "**********",            # SQL Server password
-    [string]$serverName = "DESKTOP-*******",       # SQL Server instance name
+    [string]$serverName = "DESKTOP-*******",       # SQL Server instance 46A7LA5
     [string]$databaseName = "PBI_Inventory",       # Database name
     [bool]$clearOldData = $false                    # Flag to determine whether to clear old data
 )
